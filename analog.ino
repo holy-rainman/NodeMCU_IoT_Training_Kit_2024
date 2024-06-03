@@ -7,6 +7,6 @@ void setup()
 
 void loop() 
 { an = analogRead(A0);
-  an = map(an,20,1000,0,10);
+  an = map(an,30,900,0,11);
   Serial.println(an); 
 }
