@@ -8,7 +8,7 @@ void setup()
 
 void loop() 
 { an = analogRead(A0);
-  an = map(an,22,900,0,1023);
+  an = map(an,22,930,0,1023);
   volt = an * 3.3 / 1023;
   Serial.print(an,0); 
   Serial.print("  Volt:");
