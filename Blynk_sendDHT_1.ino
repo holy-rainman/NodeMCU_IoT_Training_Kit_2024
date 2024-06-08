@@ -9,7 +9,9 @@ void setup()
 }
 
 void loop()
-{ float humidity = dht.getHumidity();
+{ delay(dht.getMinimumSamplingPeriod());
+
+  float humidity = dht.getHumidity();
   float temperature = dht.getTemperature();
 
   Serial.print(dht.getStatusString());
