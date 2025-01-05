@@ -41,7 +41,9 @@ BLYNK_WRITE(V0)
 
 void getPB()
 { int pbD5 = digitalRead(D5);
-  if(pbD5==1) { Blynk.virtualWrite(V1,"ON"); sendMessage("PB pushed!"); bot.sendMessage(CHAT_ID, "PB pushed!", ""); }
+  if(pbD5==1) { Blynk.virtualWrite(V1,"ON"); 
+                sendMessage("PB pushed!"); 
+                bot.sendMessage(CHAT_ID, "PB pushed!", ""); }
   if(pbD5==0) Blynk.virtualWrite(V1,"OFF");
 }
 
